@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Orderflow Control Center</title>
+    <script>
+      // GitHub Pages serves this file for unknown paths. Redirect deep links
+      // (e.g. /order-app-admin/issues/ISS-1001) to index.html with the route
+      // encoded in the query string; index.html restores it before React loads.
+      // Based on https://github.com/rafgraph/spa-github-pages (MIT).
+      var pathSegmentsToKeep = 1; // the repository name
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+          l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+          l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>

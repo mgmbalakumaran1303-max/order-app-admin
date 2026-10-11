@@ -1,0 +1,78 @@
+/* Design tokens – the only place raw colours, radii and spacing are defined. */
+:root {
+  --font-body: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Manrope', var(--font-body);
+  --font-mono: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  --color-primary: #1769e8;
+  --color-primary-hover: #0e59cd;
+  --color-primary-soft: #eaf2ff;
+
+  --color-sidebar: #102238;
+  --color-sidebar-hover: #1a344f;
+  --color-sidebar-active: #1d4d87;
+  --color-sidebar-text: #aebdd0;
+  --color-sidebar-muted: #71849c;
+
+  --color-background: #f5f7fb;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f8fafc;
+
+  --color-text-primary: #18283d;
+  --color-text-body: #3b4a5e;
+  --color-text-secondary: #67768a;
+  --color-text-muted: #8591a1;
+
+  --color-border: #e5eaf1;
+  --color-border-strong: #d5dde8;
+
+  --color-success: #0f8a5f;
+  --color-success-soft: #e6f8f0;
+  --color-warning: #9a6a00;
+  --color-warning-soft: #fff7dc;
+  --color-warning-border: #f5e2a6;
+  --color-orange: #c2560f;
+  --color-orange-soft: #fff1e6;
+  --color-danger: #d9363e;
+  --color-danger-soft: #fff0f0;
+  --color-danger-strong: #c62828;
+  --color-info: #1769e8;
+  --color-info-soft: #eaf2ff;
+  --color-purple: #6d4ac2;
+  --color-purple-soft: #f2edff;
+  --color-teal: #0e7c86;
+  --color-teal-soft: #e3f6f7;
+  --color-neutral: #5d6b7e;
+  --color-neutral-soft: #eef2f6;
+
+  /* Chart categorical slots (validated for CVD separation). Fixed order per channel. */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-other: #a3adba;
+  --chart-grid: #edf1f6;
+  --chart-tick: #8a96a6;
+
+  --radius-small: 6px;
+  --radius-medium: 9px;
+  --radius-large: 12px;
+  --radius-pill: 999px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  --shadow-sm: 0 1px 2px rgba(16, 34, 56, 0.04);
+  --shadow-md: 0 8px 24px rgba(16, 34, 56, 0.1);
+  --shadow-lg: 0 20px 60px rgba(16, 34, 56, 0.22);
+
+  --sidebar-width: 236px;
+  --sidebar-width-collapsed: 68px;
+  --focus-ring: 0 0 0 3px #b6d2ff;
+}
